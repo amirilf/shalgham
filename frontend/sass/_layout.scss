@@ -1,0 +1,30 @@
+.scroll-navbar{
+    @include c-glass;
+}
+@keyframes navbar {
+    0% {top: -70px;}
+    100% {top: 0px;}
+    
+}
+.sidebar {
+    position: -webkit-sticky;
+    position: sticky !important;
+    top: 100px !important;
+}
+.swiper-pagination{
+    bottom: 0px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
