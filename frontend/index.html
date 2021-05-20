@@ -5,8 +5,644 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-    
+    <div id="img-back"></div>
+    <header class="thumbnail">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light position-fixed w-100">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="text-center">
+            <h1 class="display-4 mx-auto pb-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+            </h1>
+            <p class="h2 text-white pb-5 ">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, maxime!
+            </p>
+            <button class="btn btn-outline-light mx-2 rounded mb-5">
+                <span class="h5">
+                    sgin in
+                </span>
+            </button>
+            <button class="btn btn-light mx-2 rounded mb-5">
+                <span class="h5">
+                    sgin up
+                </span>
+            </button>
+        </div>
+    </header>
+    <main class="py-5">
+        <div class="container">
+            <div class="row gx-md-5">
+                <div class="col-md-8 col-lg-9">
+                    <section>
+                        <h5 class="text-center">
+                            last articles
+                        </h5>
+                        <div class="card rounded my-4 overflow-hidden">
+                            <div class="row g-0">
+                                <div class="col-lg-4 position-relative overflow-hidden img-card">
+                                        <div class="nav-img">
+                                            <div class="btn px-2">
+                                                <i class="far fa-heart" onmouseout="likeHover(event , 0)" onmouseover="likeHover(event , 1)" onclick="likeClick(event)"></i>
+                                                <span>50</span>
+                                            </div>
+                                            <div class="btn px-2">
+                                                <i class="far fa-eye"></i>
+                                                <span >50</span>
+                                            </div>
+                                            <div class="btn px-2">
+                                                <i class="far fa-bookmark" onmouseout="saveHover(event , 0)" onmouseover="saveHover(event , 1)" onclick="saveClick(event)"></i>
+                                                <span >50</span>
+                                            </div>
+                                            <div class="btn px-2">
+                                                <i class="far fa-comments"></i>
+                                                <span >50</span>
+                                            </div>
+                                        </div>
+                                    <img src="img/card.jpg" alt="" class="position-absolute">
+                                </div>
+                                <div class="col-lg-8 p-3">
+                                    <h5>
+                                        title
+                                    </h5>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad laborum, rerum possimus nam hic in quis fuga. Alias, eos ab deserunt, nostrum culpa itaque quia aspernatur quod accusantium debitis quae?
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad laborum, rerum possimus nam hic in quis fuga. Alias, eos ab deserunt, nostrum culpa itaque quia aspernatur quod accusantium debitis quae?
+                                        
+                                    </p>
+                                    <div class="mb-4">
+                                        <a href="#" class="badge bg-js-color text-light text-decoration-none">
+                                            lorem2
+                                        </a>
+                                        <a href="#" class="badge bg-js-color text-light text-decoration-none">
+                                            Lorem, ipsum.
+                                        </a>
+                                        <a href="#" class="badge bg-js-color text-light text-decoration-none">
+                                            Lorem, ipsum dolor.
+                                        </a>
+                                    </div>
+                                    <a href="#" class="btn btn-warning float-end">
+                                        see more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card overflow-hidden rounded my-4">
+                            <div class="row g-0">
+                                <div class="col-lg-4 position-relative overflow-hidden img-card">
+                                        <div class="nav-img">
+                                            <div class="btn px-2">
+                                                <i class="far fa-heart" onmouseout="likeHover(event , 0)" onmouseover="likeHover(event , 1)" onclick="likeClick(event)"></i>
+                                                <span>50</span>
+                                            </div>
+                                            <div class="btn px-2">
+                                                <i class="far fa-eye"></i>
+                                                <span >50</span>
+                                            </div>
+                                            <div class="btn px-2">
+                                                <i class="far fa-bookmark" onmouseout="saveHover(event , 0)" onmouseover="saveHover(event , 1)" onclick="saveClick(event)"></i>
+                                                <span >50</span>
+                                            </div>
+                                            <div class="btn px-2">
+                                                <i class="far fa-comments"></i>
+                                                <span >50</span>
+                                            </div>
+                                        </div>
+                                    <img src="img/card2.jpg" alt="" class="position-absolute">
+                                </div>
+                                <div class="col-lg-8 p-3">
+                                    <h5>
+                                        title
+                                    </h5>
+                                    <p>
+                                        nam hic in quis fuga. Alias, eos ab deserunt, nostrum culpa itaque quia aspernatur quod accusantium debitis quae?
+                                    </p>
+                                    <div class="mb-4">
+                                        <a href="#" class="badge bg-js-color text-light text-decoration-none">
+                                            lorem2
+                                        </a>
+                                        <a href="#" class="badge bg-js-color text-light text-decoration-none">
+                                            Lorem, ipsum.
+                                        </a>
+                                        <a href="#" class="badge bg-js-color text-light text-decoration-none">
+                                            Lorem, ipsum dolor.
+                                        </a>
+                                    </div>
+                                    <a href="#" class="btn btn-warning float-end">
+                                        see more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card overflow-hidden rounded my-4">
+                            <div class="row g-0">
+                                <div class="col-lg-4 position-relative overflow-hidden img-card">
+                                    <div class="nav-img">
+                                        <div class="btn px-2">
+                                            <i class="far fa-heart" onmouseout="likeHover(event , 0)" onmouseover="likeHover(event , 1)" onclick="likeClick(event)"></i>
+                                            <span>50</span>
+                                        </div>
+                                        <div class="btn px-2">
+                                            <i class="far fa-eye"></i>
+                                            <span >50</span>
+                                        </div>
+                                        <div class="btn px-2">
+                                            <i class="far fa-bookmark" onmouseout="saveHover(event , 0)" onmouseover="saveHover(event , 1)" onclick="saveClick(event)"></i>
+                                            <span >50</span>
+                                        </div>
+                                        <div class="btn px-2">
+                                            <i class="far fa-comments"></i>
+                                            <span >50</span>
+                                        </div>
+                                    </div>
+                                    <img src="img/card3.jpeg" alt="" class="position-absolute">
+                                </div>
+                                <div class="col-lg-8 p-3">
+                                    <h5>
+                                        title
+                                    </h5>
+                                    <p>
+                                        itaque quia aspernatur quod accusantium debitis quae?
+                                    </p>
+                                    <div class="mb-4">
+                                        <a href="#" class="badge bg-js-color text-light text-decoration-none">
+                                            lorem2
+                                        </a>
+                                    </div>
+                                    <a href="#" class="btn btn-warning float-end">
+                                        see more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="w-100 overflow-hidden mb-4">
+                        <h5 class="text-center my-4">
+                            most visited memes
+                        </h5>
+                        <div class="row w-100 Swiper-memes2">
+                            <div class="swiper-wrapper w-100">
+                                <div class="swiper-slide col-12 col-lg-4 overflow-hidden px-lg-0 d-block">
+                                    <div class="px-2 position-relative text-center">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="img/meme2.jpg" class="img-fluid rounded" alt="">
+                                        </a>
+                                        <div class="nav-img ">
+                                            <div class="btn px-1">
+                                                <i class="far fa-heart" onmouseout="likeHover(event , 0)" onmouseover="likeHover(event , 1)" onclick="likeClick(event)"></i>
+                                                <span>50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-eye"></i>
+                                                <span >50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-bookmark" onmouseout="saveHover(event , 0)" onmouseover="saveHover(event , 1)" onclick="saveClick(event)"></i>
+                                                <span >50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-comments"></i>
+                                                <span >50</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide col-12 col-lg-4 overflow-hidden px-lg-0 d-block">
+                                    <div class="px-2 position-relative text-center">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="img/meme.jpg" class="img-fluid rounded" alt="">
+                                        </a>
+                                        <div class="nav-img">
+                                            <div class="btn px-1">
+                                                <i class="far fa-heart" onmouseout="likeHover(event , 0)" onmouseover="likeHover(event , 1)" onclick="likeClick(event)"></i>
+                                                <span>50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-eye"></i>
+                                                <span >50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-bookmark" onmouseout="saveHover(event , 0)" onmouseover="saveHover(event , 1)" onclick="saveClick(event)"></i>
+                                                <span >50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-comments"></i>
+                                                <span >50</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide col-12 col-lg-4 overflow-hidden px-lg-0 d-block">
+                                    <div class="px-2 position-relative text-center">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="img/meme3.png" class="img-fluid rounded" alt="">
+                                        </a>
+                                        <div class="nav-img ">
+                                            <div class="btn px-1">
+                                                <i class="far fa-heart" onmouseout="likeHover(event , 0)" onmouseover="likeHover(event , 1)" onclick="likeClick(event)"></i>
+                                                <span>50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-eye"></i>
+                                                <span >50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-bookmark" onmouseout="saveHover(event , 0)" onmouseover="saveHover(event , 1)" onclick="saveClick(event)"></i>
+                                                <span >50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-comments"></i>
+                                                <span >50</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide col-12 col-lg-4 overflow-hidden px-lg-0 d-block">
+                                    <div class="px-2 position-relative text-center">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="img/meme.jpg" class="img-fluid rounded" alt="">
+                                        </a>
+                                        <div class="nav-img ">
+                                            <div class="btn px-1">
+                                                <i class="far fa-heart" onmouseout="likeHover(event , 0)" onmouseover="likeHover(event , 1)" onclick="likeClick(event)"></i>
+                                                <span>50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-eye"></i>
+                                                <span >50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-bookmark" onmouseout="saveHover(event , 0)" onmouseover="saveHover(event , 1)" onclick="saveClick(event)"></i>
+                                                <span >50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-comments"></i>
+                                                <span >50</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h5 class="text-center py-2">
+                            most visited articles
+                        </h5>
+                        <div class="card rounded my-4 overflow-hidden">
+                            <div class="row g-0">
+                                <div class="col-lg-4 position-relative overflow-hidden img-card">
+                                    <div class="nav-img">
+                                        <div class="btn px-2">
+                                            <i class="far fa-heart" onmouseout="likeHover(event , 0)" onmouseover="likeHover(event , 1)" onclick="likeClick(event)"></i>
+                                            <span>50</span>
+                                        </div>
+                                        <div class="btn px-2">
+                                            <i class="far fa-eye"></i>
+                                            <span >50</span>
+                                        </div>
+                                        <div class="btn px-2">
+                                            <i class="far fa-bookmark" onmouseout="saveHover(event , 0)" onmouseover="saveHover(event , 1)" onclick="saveClick(event)"></i>
+                                            <span >50</span>
+                                        </div>
+                                        <div class="btn px-2">
+                                            <i class="far fa-comments"></i>
+                                            <span >50</span>
+                                        </div>
+                                    </div>
+                                    <img src="img/card.jpg" alt="" class="position-absolute">
+                                </div>
+                                <div class="col-lg-8 p-3">
+                                    <h5>
+                                        title
+                                    </h5>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad laborum, rerum possimus nam hic in quis fuga. Alias, eos ab deserunt, nostrum culpa itaque quia aspernatur quod accusantium debitis quae?
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad laborum, rerum possimus nam hic in quis fuga. Alias, eos ab deserunt, nostrum culpa itaque quia aspernatur quod accusantium debitis quae?
+                                        
+                                    </p>
+                                    <div class="mb-4">
+                                        <a href="#" class="badge bg-js-color text-light text-decoration-none">
+                                            lorem2
+                                        </a>
+                                        <a href="#" class="badge bg-js-color text-light text-decoration-none">
+                                            Lorem, ipsum.
+                                        </a>
+                                        <a href="#" class="badge bg-js-color text-light text-decoration-none">
+                                            Lorem, ipsum dolor.
+                                        </a>
+                                    </div>
+                                    <a href="#" class="btn btn-warning float-end">
+                                        see more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card overflow-hidden rounded my-4">
+                            <div class="row g-0">
+                                <div class="col-lg-4 position-relative overflow-hidden img-card">
+                                    <div class="nav-img">
+                                        <div class="btn px-2">
+                                            <i class="far fa-heart" onmouseout="likeHover(event , 0)" onmouseover="likeHover(event , 1)" onclick="likeClick(event)"></i>
+                                            <span>50</span>
+                                        </div>
+                                        <div class="btn px-2">
+                                            <i class="far fa-eye"></i>
+                                            <span >50</span>
+                                        </div>
+                                        <div class="btn px-2">
+                                            <i class="far fa-bookmark" onmouseout="saveHover(event , 0)" onmouseover="saveHover(event , 1)" onclick="saveClick(event)"></i>
+                                            <span >50</span>
+                                        </div>
+                                        <div class="btn px-2">
+                                            <i class="far fa-comments"></i>
+                                            <span >50</span>
+                                        </div>
+                                    </div>
+                                    <img src="img/card2.jpg" alt="" class="position-absolute">
+                                </div>
+                                <div class="col-lg-8 p-3">
+                                    <h5>
+                                        title
+                                    </h5>
+                                    <p>
+                                        nam hic in quis fuga. Alias, eos ab deserunt, nostrum culpa itaque quia aspernatur quod accusantium debitis quae?
+                                    </p>
+                                    <div class="mb-4">
+                                        <a href="#" class="badge bg-js-color text-light text-decoration-none">
+                                            lorem2
+                                        </a>
+                                        <a href="#" class="badge bg-js-color text-light text-decoration-none">
+                                            Lorem, ipsum.
+                                        </a>
+                                        <a href="#" class="badge bg-js-color text-light text-decoration-none">
+                                            Lorem, ipsum dolor.
+                                        </a>
+                                    </div>
+                                    <a href="#" class="btn btn-warning float-end">
+                                        see more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card overflow-hidden rounded my-4">
+                            <div class="row g-0">
+                                <div class="col-lg-4 position-relative overflow-hidden img-card">
+                                    <div class="nav-img">
+                                        <div class="btn px-2">
+                                            <i class="far fa-heart" onmouseout="likeHover(event , 0)" onmouseover="likeHover(event , 1)" onclick="likeClick(event)"></i>
+                                            <span>50</span>
+                                        </div>
+                                        <div class="btn px-2">
+                                            <i class="far fa-eye"></i>
+                                            <span >50</span>
+                                        </div>
+                                        <div class="btn px-2">
+                                            <i class="far fa-bookmark" onmouseout="saveHover(event , 0)" onmouseover="saveHover(event , 1)" onclick="saveClick(event)"></i>
+                                            <span >50</span>
+                                        </div>
+                                        <div class="btn px-2">
+                                            <i class="far fa-comments"></i>
+                                            <span >50</span>
+                                        </div>
+                                    </div>
+                                    <img src="img/card3.jpeg" alt="" class="position-absolute">
+                                </div>
+                                <div class="col-lg-8 p-3">
+                                    <h5>
+                                        title
+                                    </h5>
+                                    <p>
+                                        itaque quia aspernatur quod accusantium debitis quae?
+                                    </p>
+                                    <div class="mb-4">
+                                        <a href="#" class="badge bg-js-color text-light text-decoration-none">
+                                            lorem2
+                                        </a>
+                                    </div>
+                                    <a href="#" class="btn btn-warning float-end">
+                                        see more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="w-100 overflow-hidden">
+                        <h5 class="text-center my-4">
+                            most visited memes
+                        </h5>
+                        <div class="row w-100 Swiper-memes2">
+                            <div class="swiper-wrapper w-100">
+                                <div class="swiper-slide col-12 col-lg-4 overflow-hidden px-lg-0 d-block">
+                                    <div class="px-2 position-relative text-center">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="img/meme2.jpg" class="img-fluid rounded" alt="">
+                                        </a>
+                                        <div class="nav-img ">
+                                            <div class="btn px-1">
+                                                <i class="far fa-heart" onmouseout="likeHover(event , 0)" onmouseover="likeHover(event , 1)" onclick="likeClick(event)"></i>
+                                                <span>50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-eye"></i>
+                                                <span >50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-bookmark" onmouseout="saveHover(event , 0)" onmouseover="saveHover(event , 1)" onclick="saveClick(event)"></i>
+                                                <span >50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-comments"></i>
+                                                <span >50</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide col-12 col-lg-4 overflow-hidden px-lg-0 d-block">
+                                    <div class="px-2 position-relative text-center">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="img/meme.jpg" class="img-fluid rounded" alt="">
+                                        </a>
+                                        <div class="nav-img ">
+                                            <div class="btn px-1">
+                                                <i class="far fa-heart" onmouseout="likeHover(event , 0)" onmouseover="likeHover(event , 1)" onclick="likeClick(event)"></i>
+                                                <span>50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-eye"></i>
+                                                <span >50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-bookmark" onmouseout="saveHover(event , 0)" onmouseover="saveHover(event , 1)" onclick="saveClick(event)"></i>
+                                                <span >50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-comments"></i>
+                                                <span >50</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide col-12 col-lg-4 overflow-hidden px-lg-0 d-block">
+                                    <div class="px-2 position-relative text-center">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="img/meme3.png" class="img-fluid rounded" alt="">
+                                        </a>
+                                        <div class="nav-img ">
+                                            <div class="btn px-1">
+                                                <i class="far fa-heart" onmouseout="likeHover(event , 0)" onmouseover="likeHover(event , 1)" onclick="likeClick(event)"></i>
+                                                <span>50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-eye"></i>
+                                                <span >50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-bookmark" onmouseout="saveHover(event , 0)" onmouseover="saveHover(event , 1)" onclick="saveClick(event)"></i>
+                                                <span >50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-comments"></i>
+                                                <span >50</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide col-12 col-lg-4 overflow-hidden px-lg-0 d-block">
+                                    <div class="px-2 position-relative text-center">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="img/meme.jpg" class="img-fluid rounded" alt="">
+                                        </a>
+                                        <div class="nav-img ">
+                                            <div class="btn px-1">
+                                                <i class="far fa-heart" onmouseout="likeHover(event , 0)" onmouseover="likeHover(event , 1)" onclick="likeClick(event)"></i>
+                                                <span>50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-eye"></i>
+                                                <span >50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-bookmark" onmouseout="saveHover(event , 0)" onmouseover="saveHover(event , 1)" onclick="saveClick(event)"></i>
+                                                <span >50</span>
+                                            </div>
+                                            <div class="btn px-1">
+                                                <i class="far fa-comments"></i>
+                                                <span >50</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="sidebar">
+                        <div class="pb-4">
+                            <h5 class="pb-2">about us</h5>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, nam soluta inventore tenetur repellendus distinctio, quisquam quod praesentium eum accusamus aliquid? Est repellendus sunt, dignissimos saepe quidem blanditiis! Facere, dolorum.
+                            </p>
+                        </div>
+                        <div class="pb-4">
+                            <h5 class=" pb-2">about us</h5>
+                            <div>
+                                <a href="#" class="badge bg-js-color text-light text-decoration-none">
+                                    lorem2
+                                </a>
+                                <a href="#" class="badge bg-js-color text-light text-decoration-none">
+                                    Lorem, ipsum.
+                                </a>
+                                <a href="#" class="badge bg-js-color text-light text-decoration-none">
+                                    Lorem
+                                </a>
+                                <a href="#" class="badge bg-js-color text-light text-decoration-none">
+                                    Lorem, ipsum 
+                                </a>
+                                <a href="#" class="badge bg-js-color text-light text-decoration-none">
+                                    Lorem, ipsum dolor.dolor.
+                                </a>
+                                <a href="#" class="badge bg-js-color text-light text-decoration-none">
+                                    Lorem, ipsum 
+                                </a>
+                                <a href="#" class="badge bg-js-color text-light text-decoration-none">
+                                    Lorem, ipsum dolor.
+                                </a>
+                                <a href="#" class="badge bg-js-color text-light text-decoration-none">
+                                    Lorem, ipsum dolor.
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pb-4">
+                            <h5 class=" pb-2">Social Networks</h5>
+                            <div class="social-networks">
+                                <a href="#" class="text-decoration-none position-relative">
+                                    <i class="fab fa-telegram-plane"></i>
+                                    <div class="back-icon"></div>
+                                </a>
+                                <a href="#" class="text-decoration-none position-relative">
+                                    <i class="fab fa-instagram"></i>
+                                    <div class="back-icon"></div>
+                                </a>
+                                <a href="#" class="text-decoration-none position-relative">
+                                    <i class="fab fa-github"></i>
+                                    <div class="back-icon"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="text-center text-white">
+        <div class="container p-4 pb-0">
+            <section>
+            <p class="d-flex justify-content-center align-items-center">
+                <span class="me-3">Register for free</span>
+                <a href="#" class="btn btn-outline-light btn-rounded">
+                Sign up!
+                </a>
+            </p>
+            </section>
+        </div>
+        <div class="text-center p-3">
+            This website was created by 
+            <a class="text-white px-1" href="#">Alireza</a>and
+            <a class="text-white px-1" href="#">Amir</a>
+        </div>
+    </footer>
+    <!-- Footer -->  
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

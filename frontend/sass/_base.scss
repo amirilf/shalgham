@@ -1,0 +1,51 @@
+$c-white:#fff;
+$c-dark:rgb(29, 29, 29);
+@mixin d-flex-center {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+@mixin c-glass($opacity:.65 , $blur:15.0px) {
+    background: rgba( 255, 255, 255, $opacity );
+    backdrop-filter: blur( $blur );
+    -webkit-backdrop-filter: blur( 15.0px );
+    box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.075);
+    animation: navbar .5s;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: url('../img/header2.jpg') center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+main{
+    // background-color: $c-white;
+    @include c-glass(.90);
+}
+@font-face {
+    font-family: FiraSans-M;
+    src: url(../font/FiraSans-Medium.ttf); 
+}
+@font-face {
+    font-family: FiraSans-E;
+    src: url(../font/FiraSans-ExtraLight.ttf);
+}
+@font-face {
+    font-family: FiraSans-MT;
+    src: url(../font/FiraSans-MediumItalic.ttf);
+}
+@font-face {
+    font-family: FiraSans-ET;
+    src: url(../font/FiraSans-ExtraLightItalic.ttf);
+}
+@font-face {
+    font-family: FiraSans-T;
+    src: url(../font/FiraSans-Thin.ttf);
+}
+@for $var from 1 to 7 {
+    h#{$var}{
+        font-family: FiraSans-MT;
+    }
+}
